@@ -1,0 +1,110 @@
+:root{
+--blue: hsla(197, 32%, 66%, 0.966);
+--lighBlue: hsla(197, 90%, 92%, 0.856);
+--veryLighBlue:hsl(196, 81%, 89%);
+--purple: hsla(293, 95%, 25%, 0.815);
+--white:hsl(0, 0%, 100%);
+--darkblue:hsla(29, 84%, 93%, 0.712);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--blue);
+}
+
+h1{
+    margin-top: 50px;
+    color: var(--white);
+    text-align: center;
+    
+}
+
+form{
+    margin: 45px auto;
+    text-align: center;
+}
+
+form input[type="text"]{
+    background-color:var(--darkblue);
+    color: var(--white);
+    border-style: none;
+    font-size: 1.5em;
+}
+
+form input[type="text"]::placeholder{
+    color: var(--blue);
+}
+form input[type="text"]:focus{
+    outline: none;
+}
+form input[type="submit"]{
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    color: var(--blue);
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--veryLighBlue);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.list-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.task-container{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--purple);
+}
+.closeBtn{
+    width: 15px;
+    height: 15px;
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+
+}
+
+#stats{
+    margin: 25px;
+    font-size: 1.5em;
+    color: rgb(22, 84, 201);
+    text-align: center;
+}
+
+fieldset{
+    padding: 15px;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    position: static;
+    text-align: center;
+    
+    background-color: hsla(194, 84%, 75%, 0.486);
+    
+    color: rgb(22, 84, 201);
+    
+}
+h3{
+    text-align: center;
+    color: darkblue;
+    font-size: .9em;
+
+}
